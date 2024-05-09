@@ -1,4 +1,4 @@
-let searchbar = document.querySelector("input#search");
+let searchbar = document.querySelector("#search");
 
 searchbar.addEventListener('keydown', function (e){
     if(e.code == "Enter")
