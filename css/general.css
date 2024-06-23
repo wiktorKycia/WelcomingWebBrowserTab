@@ -8,7 +8,9 @@
   --color-accent1: #a62f24;
   --color-accent2: #d93636;
 
-  --gradient: linear-gradient(45deg, var(--color2) 0%, var(--colora-accent2) 100%);
+  --gradient0: linear-gradient(var(--color2) 0%, var(--color2) 100%);
+  --gradient1: linear-gradient(135deg, var(--color2) 0%, var(--color-accent2) 100%);
+  --gradient2: linear-gradient(135deg, var(--color3) 0%, var(--color2) 100%);
 
   --h1: bold 54px/60px var(--ff);
   --h2: bold 36px/48px var(--ff);
@@ -61,11 +63,17 @@ section
     margin: 16px 0;
     padding: 16px;
     border-radius: 16px;
-    background-color: var(--color2);
+    background: var(--gradient0);
+    /* background-color: var(--color2); */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    transition: var(--transition);
+}
+section:hover
+{
+    background: var(--gradient2);
 }
