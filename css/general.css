@@ -18,3 +18,7 @@
   --transition: 0.3s ease-in-out;
   --shadow: #e0e0e0 0px 0px 10px 0px;
 }
+html, body
+{
+    margin: 0;
+}
