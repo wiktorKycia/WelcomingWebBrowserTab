@@ -55,3 +55,16 @@ main
 {
     width: clamp(200px, 30vw, 600px);
 }
+section
+{
+    margin: 16px 0;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
