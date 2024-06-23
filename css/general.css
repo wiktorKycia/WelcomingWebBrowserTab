@@ -31,3 +31,12 @@ body
     background-color: var(--color1);
     color: var(--color3);
 }
+header
+{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 16px;
+}
