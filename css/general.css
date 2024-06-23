@@ -33,10 +33,19 @@ body
 }
 header
 {
-    width: 100%;
+    width: 100dvw;
     height: 64px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding: 16px;
+}
+main
+{
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
 }
