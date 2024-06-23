@@ -22,3 +22,12 @@ html, body
 {
     margin: 0;
 }
+body
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: var(--ff);
+    background-color: var(--color1);
+    color: var(--color3);
+}
