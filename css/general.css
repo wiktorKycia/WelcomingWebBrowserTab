@@ -3,7 +3,8 @@
   --ff: "Montserrat", sans-serif;
   --color1: #0d0d0d;
   --color2: #2d2d2d;
-  --color3: #f2f2f2;
+  --color3: #3f3f3f;
+  --color4: #f2f2f2;
   --color-accent1: #a62f24;
   --color-accent2: #d93636;
 
@@ -31,7 +32,7 @@ body
     flex-wrap: wrap;
     font-family: var(--ff);
     background-color: var(--color1);
-    color: var(--color3);
+    color: var(--color4);
 }
 header
 {
