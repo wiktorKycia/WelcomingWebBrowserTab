@@ -93,10 +93,12 @@ h2
 h3
 {
     font: var(--h3);
+    margin: 12px 0;
 }
 h4
 {
     font: var(--h4);
+    margin: 8px 0;
 }
 a
 {
@@ -105,3 +107,33 @@ a
     text-decoration: none;
     transition: var(--transition);
 }
+
+#it > article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+#tutorials
+{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4px;
+}
+.it-child
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* #exercises, #communities
+{
+    display: flex;
+    flex-direction: column;
+} */
