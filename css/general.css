@@ -9,7 +9,7 @@
   --color-accent2: #d93636;
 
   --gradient0: linear-gradient(var(--color2) 0%, var(--color2) 100%);
-  --gradient1: linear-gradient(135deg, var(--color2) 0%, var(--color-accent2) 100%);
+  --gradient1: linear-gradient(135deg, var(--color-accent2) 0%, var(--color3) 100%);
   --gradient2: linear-gradient(135deg, var(--color3) 0%, var(--color2) 100%);
 
   --h1: bold 54px/60px var(--ff);
@@ -76,4 +76,5 @@ section
 section:hover
 {
     background: var(--gradient2);
+    box-shadow: var(--shadow);
 }
