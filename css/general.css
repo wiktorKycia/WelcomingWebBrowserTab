@@ -12,9 +12,9 @@
   --gradient1: linear-gradient(135deg, var(--color-accent2) 0%, var(--color3) 100%);
   --gradient2: linear-gradient(135deg, var(--color3) 0%, var(--color2) 100%);
 
-  --h1: bold 54px/60px var(--ff);
-  --h2: bold 36px/48px var(--ff);
-  --h3: bold 24px/36px var(--ff);
+  --h1: bold 32px/40px var(--ff);
+  --h2: bold 28px/32px var(--ff);
+  --h3: bold 24px/28px var(--ff);
   --h4: bold 20px/24px var(--ff);
 
   --links: 16px/16px var(--ff);
@@ -77,4 +77,31 @@ section:hover
 {
     background: var(--gradient2);
     box-shadow: var(--shadow);
+}
+h2,
+h3,
+h4
+{
+    color: var(--color4);
+    width: max-content;
+    text-align: center;
+}
+h2
+{
+    font: var(--h2);
+}
+h3
+{
+    font: var(--h3);
+}
+h4
+{
+    font: var(--h4);
+}
+a
+{
+    color: var(--color4);
+    font: var(--links);
+    text-decoration: none;
+    transition: var(--transition);
 }
