@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --ff: "Montserrat", sans-serif;
+  --color1: #0d0d0d;
+  --color2: #2d2d2d;
+  --color3: #3f3f3f;
+  --color4: #f2f2f2;
+  --color-accent1: #a62f24;
+  --color-accent2: #d93636;
+
+  --gradient0: linear-gradient(var(--color2) 0%, var(--color2) 100%);
+  --gradient1: linear-gradient(135deg, var(--color-accent2) 0%, var(--color-accent1) 100%);
+  --gradient2: linear-gradient(135deg, var(--color3) 0%, var(--color2) 100%);
+
+  --h1: bold 32px/40px var(--ff);
+  --h2: bold 28px/32px var(--ff);
+  --h3: bold 24px/28px var(--ff);
+  --h4: bold 20px/24px var(--ff);
+
+  --links: 16px/16px var(--ff);
+  --transition: 0.3s ease-in-out;
+  --shadow: #e0e0e0 0px 0px 10px 0px;
+}
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: var(--ff);
+    background-color: var(--color1);
+    color: var(--color4);
+}
+header
+{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 16px 0;
+}
+main
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 0;
+    gap: 16px;
+}
+.main
+{
+    width: clamp(200px, 30vw, 600px);
+}
+section
+{
+    margin: 16px 0;
+    padding: 16px;
+    border-radius: 16px;
+    background: var(--gradient0);
+    /* background-color: var(--color2); */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+section:hover
+{
+    background: var(--gradient2);
+    box-shadow: var(--shadow);
+}
+
+article
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+h2,
+h3,
+h4
+{
+    color: var(--color4);
+    width: max-content;
+    text-align: center;
+}
+h2
+{
+    font: var(--h2);
+}
+h3
+{
+    font: var(--h3);
+    margin: 12px 0;
+}
+h4
+{
+    font: var(--h4);
+    margin: 8px 0;
+}
+a
+{
+    color: var(--color4);
+    font: var(--links);
+    text-decoration: none;
+    transition: var(--transition);
+}
+a:hover
+{
+    background: var(--gradient1);
+    background-clip: text;
+    color: transparent;
+}
+
+#it > article
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.subarticle
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#tut
+{
+    width: 100%;
+}
+
+#tutorials
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 4px;
+    flex:2;
+}
+.it-child
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: max-content;
+}
+
+
+#exercises, #communities
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    flex: 1;
+}
+
+#searching
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#searching > input
+{
+    width: clamp(250px, 40vw, 800px);
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    padding: 0 8px;
+    font: var(--links);
+    background: var(--gradient0);
+    color: var(--color4);
+}
+#searching > input:hover, #searching > button:hover
+{
+    background: var(--gradient2) padding-box, var(--gradient1) border-box;
+    border: 1px solid transparent;
+}
+
+#searching > button
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--color2);
+    color: var(--color4);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+svg
+{
+    width: 72px;
+    height: 72px;
+    transition: scale 0.2s ease;
+}
+svg > path
+{
+    transition: fill 0.2s;
+    fill: black;
+}
+svg:hover > path
+{
+    fill: var(--gradient1);
+    background-clip: border-box;
+    background: var(--gradient1);
+}
+svg:hover
+{
+    scale: 1.05;
+}
+button > svg
+{
+    width: 24px;
+    height: 24px;
+}
