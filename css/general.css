@@ -9,7 +9,7 @@
   --color-accent2: #d93636;
 
   --gradient0: linear-gradient(var(--color2) 0%, var(--color2) 100%);
-  --gradient1: linear-gradient(135deg, var(--color-accent2) 0%, var(--color3) 100%);
+  --gradient1: linear-gradient(135deg, var(--color-accent2) 0%, var(--color-accent1) 100%);
   --gradient2: linear-gradient(135deg, var(--color3) 0%, var(--color2) 100%);
 
   --h1: bold 32px/40px var(--ff);
@@ -118,6 +118,12 @@ a
     text-decoration: none;
     transition: var(--transition);
 }
+a:hover
+{
+    background: var(--gradient1);
+    background-clip: text;
+    color: transparent;
+}
 
 #it > article
 {
@@ -171,4 +177,73 @@ a
     gap: 4px;
     width: 100%;
     flex: 1;
+}
+
+#searching
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#searching > input
+{
+    width: clamp(250px, 40vw, 800px);
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    padding: 0 8px;
+    font: var(--links);
+    background: var(--gradient0);
+    color: var(--color4);
+}
+#searching > input:hover, #searching > button:hover
+{
+    background: var(--gradient2) padding-box, var(--gradient1) border-box;
+    border: 1px solid transparent;
+}
+
+#searching > button
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--color2);
+    color: var(--color4);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+svg
+{
+    width: 72px;
+    height: 72px;
+    transition: scale 0.2s ease;
+}
+svg > path
+{
+    transition: fill 0.2s;
+    fill: black;
+}
+svg:hover > path
+{
+    fill: var(--gradient1);
+    background-clip: border-box;
+    background: var(--gradient1);
+}
+svg:hover
+{
+    scale: 1.05;
+}
+button > svg
+{
+    width: 24px;
+    height: 24px;
 }
