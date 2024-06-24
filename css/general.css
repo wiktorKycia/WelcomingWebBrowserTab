@@ -120,10 +120,26 @@ a
 #it > article
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
-    gap: 4px;
+    justify-content: space-evenly;
+    gap: 8px;
 }
+
+.subarticle
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#tut
+{
+    width: 100%;
+}
+
 #tutorials
 {
     width: 100%;
@@ -140,13 +156,17 @@ a
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    width: max-content;
 }
+
 
 #exercises, #communities
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
     width: 100%;
     flex: 1;
 }
